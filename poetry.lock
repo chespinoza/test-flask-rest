@@ -170,18 +170,6 @@ version = "*"
 
 [[package]]
 category = "main"
-description = "Data validation and settings management using python 3.6 type hinting"
-name = "pydantic"
-optional = false
-python-versions = ">=3.6"
-version = "1.3"
-
-[package.extras]
-email = ["email-validator (>=1.0.3)"]
-typing_extensions = ["typing-extensions (>=3.7.2)"]
-
-[[package]]
-category = "main"
 description = "World timezone definitions, modern and historical"
 name = "pytz"
 optional = false
@@ -203,22 +191,6 @@ name = "six"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 version = "1.14.0"
-
-[[package]]
-category = "main"
-description = "generate OpenAPI document and validate request&response with Python annotations."
-name = "spectree"
-optional = false
-python-versions = ">=3.6"
-version = "0.2.4"
-
-[package.dependencies]
-pydantic = ">=1.2"
-
-[package.extras]
-falcon = ["falcon"]
-flask = ["flask"]
-starlette = ["starlette", "requests"]
 
 [[package]]
 category = "dev"
@@ -270,7 +242,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["pathlib2", "contextlib2", "unittest2"]
 
 [metadata]
-content-hash = "ae1ed736398b86c8baf809f57873b7dc5d57fa9f6d3db1626e82ca2668805758"
+content-hash = "a8871a65d9c3de3ca42f5c664513dadd3f907454b644ef2bce719e084daad3a8"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -355,22 +327,6 @@ pre-commit = [
     {file = "pre_commit-1.21.0-py2.py3-none-any.whl", hash = "sha256:f92a359477f3252452ae2e8d3029de77aec59415c16ae4189bcfba40b757e029"},
     {file = "pre_commit-1.21.0.tar.gz", hash = "sha256:8f48d8637bdae6fa70cc97db9c1dd5aa7c5c8bf71968932a380628c25978b850"},
 ]
-pydantic = [
-    {file = "pydantic-1.3-cp36-cp36m-manylinux1_i686.whl", hash = "sha256:dd9359db7644317898816f6142f378aa48848dcc5cf14a481236235fde11a148"},
-    {file = "pydantic-1.3-cp36-cp36m-manylinux1_x86_64.whl", hash = "sha256:cbe284bd5ad67333d49ecc0dc27fa52c25b4c2fe72802a5c060b5f922db58bef"},
-    {file = "pydantic-1.3-cp36-cp36m-manylinux2010_i686.whl", hash = "sha256:2b32a5f14558c36e39aeefda0c550bfc0f47fc32b4ce16d80dc4df2b33838ed8"},
-    {file = "pydantic-1.3-cp36-cp36m-manylinux2010_x86_64.whl", hash = "sha256:59235324dd7dc5363a654cd14271ea8631f1a43de5d4fc29c782318fcc498002"},
-    {file = "pydantic-1.3-cp37-cp37m-manylinux1_i686.whl", hash = "sha256:176885123dfdd8f7ab6e7ba1b66d4197de75ba830bb44d921af88b3d977b8aa5"},
-    {file = "pydantic-1.3-cp37-cp37m-manylinux1_x86_64.whl", hash = "sha256:d4bb6a75abc2f04f6993124f1ed4221724c9dc3bd9df5cb54132e0b68775d375"},
-    {file = "pydantic-1.3-cp37-cp37m-manylinux2010_i686.whl", hash = "sha256:8a8e089aec18c26561e09ee6daf15a3cc06df05bdc67de60a8684535ef54562f"},
-    {file = "pydantic-1.3-cp37-cp37m-manylinux2010_x86_64.whl", hash = "sha256:479ca8dc7cc41418751bf10302ee0a1b1f8eedb2de6c4f4c0f3cf8372b204f9a"},
-    {file = "pydantic-1.3-cp38-cp38-manylinux1_i686.whl", hash = "sha256:87673d1de790c8d5282153cab0b09271be77c49aabcedf3ac5ab1a1fd4dcbac0"},
-    {file = "pydantic-1.3-cp38-cp38-manylinux1_x86_64.whl", hash = "sha256:dacb79144bb3fdb57cf9435e1bd16c35586bc44256215cfaa33bf21565d926ae"},
-    {file = "pydantic-1.3-cp38-cp38-manylinux2010_i686.whl", hash = "sha256:c0da48978382c83f9488c6bbe4350e065ea5c83e85ca5cfb8fa14ac11de3c296"},
-    {file = "pydantic-1.3-cp38-cp38-manylinux2010_x86_64.whl", hash = "sha256:b60f2b3b0e0dd74f1800a57d1bbd597839d16faf267e45fa4a5407b15d311085"},
-    {file = "pydantic-1.3-py36.py37.py38-none-any.whl", hash = "sha256:d03df07b7611004140b0fef91548878c2b5f48c520a8cb76d11d20e9887a495e"},
-    {file = "pydantic-1.3.tar.gz", hash = "sha256:2eab7d548b0e530bf65bee7855ad8164c2f6a889975d5e9c4eefd1e7c98245dc"},
-]
 pytz = [
     {file = "pytz-2019.3-py2.py3-none-any.whl", hash = "sha256:1c557d7d0e871de1f5ccd5833f60fb2550652da6be2693c1e02300743d21500d"},
     {file = "pytz-2019.3.tar.gz", hash = "sha256:b02c06db6cf09c12dd25137e563b31700d3b80fcc4ad23abb7a315f2789819be"},
@@ -391,10 +347,6 @@ pyyaml = [
 six = [
     {file = "six-1.14.0-py2.py3-none-any.whl", hash = "sha256:8f3cd2e254d8f793e7f3d6d9df77b92252b52637291d0f0da013c76ea2724b6c"},
     {file = "six-1.14.0.tar.gz", hash = "sha256:236bdbdce46e6e6a3d61a337c0f8b763ca1e8717c03b369e87a7ec7ce1319c0a"},
-]
-spectree = [
-    {file = "spectree-0.2.4-py3-none-any.whl", hash = "sha256:2dd6e64438172fef044f26ecd40529b0243494a9c202e7df33a2a07f81b33606"},
-    {file = "spectree-0.2.4.tar.gz", hash = "sha256:9a1eeb476039e0380a12a7704ab95739bf78153a71e93824ec890c3ee653304c"},
 ]
 toml = [
     {file = "toml-0.10.0-py2.7.egg", hash = "sha256:f1db651f9657708513243e61e6cc67d101a39bad662eaa9b5546f789338e07a3"},

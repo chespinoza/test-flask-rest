@@ -1,12 +1,11 @@
 [tool.poetry]
-name = "check-spectree"
+name = "check-rest-api"
 version = "0.1.0"
 description = ""
 authors = ["Christian Espinoza <chespinoza@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-spectree = "^0.2.4"
 flask = "^1.1.1"
 flask-restful = "^0.3.7"
 
